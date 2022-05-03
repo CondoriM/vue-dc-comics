@@ -55,7 +55,20 @@
         </div>
 
         <div class="socials">
+            <div class="sing-up">
+                <a href="#">SING-UP NOW!</a>
+            </div>
 
+            <div class="follow">
+                <span>FOLLOW US</span>
+                
+                <img src="@/assets/img/footer-facebook.png" alt="">
+                <img src="@/assets/img/footer-twitter.png" alt="">
+                <img src="@/assets/img/footer-youtube.png" alt="">
+                <img src="@/assets/img/footer-pinterest.png" alt="">
+                <img src="@/assets/img/footer-periscope.png" alt="">
+                
+            </div>
         </div>
     </div>
 </template>
@@ -66,6 +79,7 @@
     background-image: url('@/assets/img/footer-bg.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    position: relative;
 }
 
 .credits{
@@ -78,6 +92,8 @@
     .box_list{
         display: flex;
         color: white;
+        gap: 3rem;
+        text-align: left;
 
         ul{
             list-style-type: none;
@@ -95,6 +111,39 @@
 
         img{
             margin: -130px 0 0 0;
+        }
+    }
+}
+
+.socials{
+    display: flex;
+    background-color:var(--bg-foot-second) ;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    padding: 1.5rem;
+
+    .sing-up{
+        width: 50%;
+
+        a{
+            text-decoration: none;
+            color: white;
+            padding: 0.5rem;
+            border: 2px solid;
+            border-color: var(--bg-foot);
+        }
+    }
+
+    .follow{
+        width: 50%;
+        display: flex;
+        gap: 0.5rem;
+        align-items: center;
+        justify-content: center;
+
+        span{
+            color: var(--bg-foot);
         }
     }
 }

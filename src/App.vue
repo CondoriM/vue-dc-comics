@@ -30,6 +30,7 @@ export default {
 
 :root{
   --bg-foot: #0182f9;
+  --bg-foot-second: #303030;
   --text-foot: #6d6d6f;
 }
 
@@ -39,7 +40,6 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
 
 /* Grid Syn */
