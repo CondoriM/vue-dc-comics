@@ -1,22 +1,38 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <SiteHeader/>
+    <SiteFooter/>
+    <SiteCredit/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import SiteHeader from '@/components/HeaderComponent.vue';
+import SiteFooter from '@/components/FooterComponent.vue';
+import SiteCredit from '@/components/CreditComponent.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    SiteHeader,
+    SiteFooter,
+    SiteCredit
   }
 }
 </script>
 
 <style lang="scss">
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --bg-foot: #0182f9;
+  --text-foot: #6d6d6f;
+}
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -25,4 +41,17 @@ export default {
   color: #2c3e50;
   margin-top: 60px;
 }
+
+/* Grid Syn */
+.row{
+  display: flex;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+}
+
+.col{
+  width: 20%;
+}
+
 </style>
