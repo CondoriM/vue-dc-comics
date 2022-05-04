@@ -1,6 +1,9 @@
 <template>
   <div id="app">
     <SiteHeader/>
+    <div class="jumb">
+      
+    </div>
     <SiteMain/>
     <SiteFooter/>
     <SiteCredit/>
@@ -55,4 +58,10 @@ export default {
   width: 20%;
 }
 
+.jumb{
+  width: 100%;
+  background-image: url(@/assets/img/jumbotron.jpg);
+  height: 300px;
+  background-size: cover;
+}
 </style>

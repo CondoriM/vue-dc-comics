@@ -1,8 +1,10 @@
 <template>
     <div class="col-3">
         <div class="product">
+            
             <img :src="src" :alt="titolo"/>
-            <h3>{{titolo}}</h3>
+            <h4>{{titolo}}</h4>
+            
         </div>
     </div>
 </template>
@@ -23,10 +25,6 @@
         width: calc(100% / 12) * 2;
         color: var(--bg-nav);
         margin: 2rem 0;
-        
-        .img{
-            aspect-ratio: 1 / 1;
-        }
     }
 
 </style>

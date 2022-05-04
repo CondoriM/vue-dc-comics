@@ -1,6 +1,12 @@
 <template>
-    <div class="container flex-box">
-        <Product :src="product.thumb" v-for="(product,index) in products" :key="index" :titolo="product.series"/>
+    <div class="container">
+        <div class="flex-box">
+            <Product :src="product.thumb" v-for="(product,index) in products" :key="index" :titolo="product.series"/>
+        </div>
+        
+        <div>
+            <a class="btn" href="#">LOAD MORE</a>
+        </div>
     </div>
 </template>
 
@@ -95,11 +101,25 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem;
+    }
+    
     .flex-box{
         display: flex;
         max-width: 70%;
         flex-wrap: wrap;
         justify-content: space-around;
         margin: auto;
+    }
+
+    .btn{
+        text-decoration: none;
+        color: var(--bg-nav);
+        padding: 1rem;
+        background-color: var(--bg-foot);
     }
 </style>
