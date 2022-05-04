@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <SiteHeader/>
+    <SiteMain/>
     <SiteFooter/>
     <SiteCredit/>
   </div>
@@ -9,14 +10,16 @@
 <script>
 import SiteHeader from '@/components/HeaderComponent.vue';
 import SiteFooter from '@/components/FooterComponent.vue';
-import SiteCredit from '@/components/CreditComponent.vue'
+import SiteCredit from '@/components/CreditComponent.vue';
+import SiteMain from '@/components/MainComponent.vue'
 
 export default {
   name: 'App',
   components: {
     SiteHeader,
     SiteFooter,
-    SiteCredit
+    SiteCredit,
+    SiteMain
   }
 }
 </script>
@@ -30,16 +33,14 @@ export default {
 
 :root{
   --bg-foot: #0182f9;
+  --bg-nav: #ffffff;
   --bg-foot-second: #303030;
   --text-foot: #6d6d6f;
 }
 
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+  background-color: var(--bg-foot-second);
 }
 
 /* Grid Syn */

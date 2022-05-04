@@ -23,11 +23,19 @@
     </header>
 </template>
 
+<script>
+export default {
+    name: "SiteHeader",
+}
+</script>
+
 <style lang="scss" scoped>
 .container{
     display: flex;
     align-items: center;
     padding: 0.5rem 0;
+    text-align: center;
+    background-color: var(--bg-nav);
 
     .logo{
         width: 30%;

@@ -73,6 +73,12 @@
     </div>
 </template>
 
+<script>
+export default {
+    name: "SiteCredit",
+}
+</script>
+
 <style lang="scss" scoped>
 
 .container{
